@@ -58,10 +58,11 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y) { 
-    return "true";}
+  if (x === y) { 
+    return true;
+  }
       else {
-        return "false";
+        return false;
       }
 }
 
@@ -69,11 +70,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( str1.length = str2.length) {
-    return "true";}
-    else {
-      return "false";
-    }
+ return str1.length === str2.length
   }
 
 function menosQueNoventa(num) {
@@ -81,9 +78,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return "true";}
+    return true;}
     else {
-      return "false";
+      return false;
     }
 }
 
@@ -92,9 +89,9 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num > 50) {
-    return "true";}
+    return true;}
     else {
-      return "false";
+      return false;
     }
 }
 
@@ -109,10 +106,10 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num % 2 === 0) {
-    return "true"
+    return true
     }
     else {
-      return "false"
+      return false
     }
 }
 
@@ -120,10 +117,10 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2)!=0) {
-    return "true"  }
+  if (num % 2!=0) {
+    return true  }
   else {
-    return "false"
+    return false
   }
 }
 
@@ -161,7 +158,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.floor(num)
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -234,12 +231,11 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1){
-    return  "Dato Incorrecto"
+    return  "Dato incorrecto"
   }
-  else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" ||
-   letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U")
-    {return "Es vocal"}
-    else {return "Dato Incorrecto"}
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal";}
+    else {return "Dato incorrecto";}
 }
 
 
